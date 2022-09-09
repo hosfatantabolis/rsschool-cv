@@ -2,13 +2,13 @@
 
 ## Contacts
 
-Name: Maksim Litvinov  
-Location: St.Petersburg, Russia  
-Phone: +7(911)727-94-07  
-E-mail: litvinov.maksim.konstantinovich@gmail.com  
-Website: https://hosfatantabolis.ru
+**Location**: St.Petersburg, Russia  
+**Phone**: +7(911)727-94-07  
+**E-mail**: litvinov.maksim.konstantinovich@gmail.com  
+**Telegram**: @hosfatantabolis  
+**Website**: [hosfatantabolis.ru](https://hosfatantabolis.ru)
 
-в CV добавьте своё фото или аватарку. Фото предпочтительнее
+![My photo](/img/me.jpg "My photo")
 
 ## About me
 
@@ -34,6 +34,6 @@ Website: https://hosfatantabolis.ru
 
 ## Languages
 
-English: upper-intermediate
-Russian: native speaker
+**English**: upper-intermediate  
+**Russian**: native speaker  
 Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
