@@ -16,12 +16,26 @@
 
 ## Skills
 
-Навыки (языки программирования, фреймворки, методологии, системы контроля версий и инструменты разработки, которыми вы владеете)
+- JS
+  - React.js
+  - React Native (Basic knowledge)
+  - Vue.js (Basic knowledge)
+  - Node.js
+  - Express.js
+- HTML5
+- CSS3
+- MongoDB
+- BEM methodology
+- Git
+- VSCode
+- Figma
 
 ## Code examples
 
+```
 Примеры кода
 код добавляется при помощи символов и тегов, а не картинкой
+```
 
 ## Work experience
 
