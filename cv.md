@@ -6,13 +6,18 @@
 **Phone**: +7(911)727-94-07  
 **E-mail**: litvinov.maksim.konstantinovich@gmail.com  
 **Telegram**: @hosfatantabolis  
-**Website**: [hosfatantabolis.ru](https://hosfatantabolis.ru)
+**Website**: [hosfatantabolis.ru](https://hosfatantabolis.ru)  
+**Github**: [github.com/hosfatantabolis](https://github.com/hosfatantabolis)
 
 ![My photo](/img/me.jpg "My photo")
 
 ## About me
 
-Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении учиться и узнавать новое)
+I've been learning frontend for quite a while now and I want to proceed and progress. I think that web-development is a challenging and exciting. I'm looking for a variety of different assignments, that will help me become a proficient developer.
+
+I've made some Arduino projects, mostly basic. Photos of the best one can be seen [here](https://www.instagram.com/p/BlbShpsnTBT/?igshid=YmMyMTA2M2Y=).
+
+In my spare time I like to shoot photos, I also collect vinyl records.
 
 ## Skills
 
@@ -32,22 +37,69 @@
 
 ## Code examples
 
+**Edit note**
+
 ```
-Примеры кода
-код добавляется при помощи символов и тегов, а не картинкой
+const handleEdit = (e, item) => {
+    dispatch(editSelectedNoteAction({
+        ...selectedNote, list: selectedNote.list.map(listItem => {
+            return listItem.id === item.id ? { ...listItem, text: e.target.textContent } : listItem
+        })
+    }));
+}
+```
+
+**Reducers: index.js**
+
+```
+import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers } from 'redux';
+import { noteReducer } from './noteReducer';
+import { themeReducer } from './modeReducer';
+
+const rootReducer = combineReducers({
+    notes: noteReducer,
+    theme: themeReducer,
+});
+
+export const store = configureStore({ reducer: rootReducer });
 ```
 
 ## Work experience
 
-Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и ссылками на исходный код.
-Для выполненных проектов добавьте название проекта, ссылку на код проекта на гитхабе или ссылку на страницу проекта. Если выполненных проектов пока нет, в качестве первого проекта укажите само CV
+### Study projects:
+
+- [Mesto Project](https://mesto.hosfatantabolis.ru/)
+  - React
+  - Express
+  - MongoDB
+- [Movies Project](https://movies.hosfatantabolis.ru/)
+  - React
+  - Express
+  - MongoDB
+- [Project How-to-learn](https://how-to-learn.hosfatantabolis.ru/)
+  - HTML5, CSS3
+- [Travel Project](https://russian-travel.hosfatantabolis.ru/)
+  - CSS3 Responsive mark-up (grid, flex), HTML5, BEM methodology
+
+### Pet-projects:
+
+- [Random Beer Project](https://random-beer.hosfatantabolis.ru/)
+  - Vue.js basic usage
+- [Notes Project](https://notes.hosfatantabolis.ru/)
+  - React / Redux
+- [Scanner Project](https://hosfatantabolis.ru/scanner)
+  - React Native basic usage for my current job
+  - Telegram bots
+
+Projects' code can be viewed on my [github](https://github.com/hosfatantabolis).
 
 ## Education
 
-Образование (включая пройденные курсы и тренинги)
+- Yandex.Prakticum Web-Developer 10-month course
+- ITMO college (Institute of Precise Mechanics and Optics)
 
 ## Languages
 
 **English**: upper-intermediate  
-**Russian**: native speaker  
-Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
+**Russian**: native speaker
