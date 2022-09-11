@@ -4,8 +4,8 @@
 
 **Location**: St.Petersburg, Russia  
 **Phone**: [+7(911)727-94-07](tel:+79117279407)  
-**E-mail**: litvinov.maksim.konstantinovich@gmail.com  
-**Telegram**: @hosfatantabolis  
+**E-mail**: <litvinov.maksim.konstantinovich@gmail.com>  
+**Telegram**: [@hosfatantabolis](https://t.me/hosfatantabolis)  
 **Website**: [hosfatantabolis.ru](https://hosfatantabolis.ru)  
 **Github**: [github.com/hosfatantabolis](https://github.com/hosfatantabolis)
 
