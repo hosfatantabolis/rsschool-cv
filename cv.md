@@ -9,7 +9,7 @@
 **Website**: [hosfatantabolis.ru](https://hosfatantabolis.ru)  
 **Github**: [github.com/hosfatantabolis](https://github.com/hosfatantabolis)
 
-![My photo](/img/me.jpg "My photo")
+![My photo](./img/me.jpg)
 
 ## About me
 
