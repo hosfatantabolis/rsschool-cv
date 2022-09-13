@@ -6,6 +6,7 @@ CV task for RSSchool
 
 Markdown usage
 
-## Link
+## Links
 
-https://hosfatantabolis.github.io/rsschool-cv/cv
+Markdown: [https://hosfatantabolis.github.io/rsschool-cv/cv](https://hosfatantabolis.github.io/rsschool-cv/cv)  
+HTML: [https://hosfatantabolis.github.io/rsschool-cv](https://hosfatantabolis.github.io/rsschool-cv)
