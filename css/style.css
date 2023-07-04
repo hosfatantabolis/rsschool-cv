@@ -32,6 +32,10 @@
       format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -161,8 +165,13 @@ pre {
 
 .footer__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
+  padding: 0;
+}
+.footer {
+  border-top: 1px solid #ffff;
+  margin: 20px 0;
 }
 
 .footer__logo {
