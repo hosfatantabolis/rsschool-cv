@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #050602;
+  color: #ffffff;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: #080b20;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.container__main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 5px;
+}
+
+.profile__photo {
+  border-radius: 50%;
+  max-height: 200px;
+}
