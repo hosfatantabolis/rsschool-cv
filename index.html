@@ -13,6 +13,9 @@
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__list-item">
+              <a class="nav__link" href="#profile">Profile</a>
+            </li>
+            <li class="nav__list-item">
               <a class="nav__link" href="#contacts">Contacts</a>
             </li>
             <li class="nav__list-item">
@@ -64,7 +67,7 @@
             <li class="contacts__list-item">
               <a
                 class="contacts__list-item_link"
-                href="mailto:litvinov.maksim.konstantinovich@gmail.com?subject=Предложение о работе"
+                href="mailto:litvinov.maksim.konstantinovich@gmail.com?subject=Предложение%20о%20работе"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -103,6 +106,7 @@
             I’ve made some Arduino projects, mostly basic. Photos of the best
             one can be seen
             <a
+              class="about__link"
               href="https://www.instagram.com/p/BlbShpsnTBT/?igshid=YmMyMTA2M2Y="
               target="_blank"
               rel="noreferrer"
@@ -112,10 +116,10 @@
         </section>
         <section class="section" id="skills">
           <h2 class=".section-title">Skills</h2>
-          <ul>
+          <ul class="skills__list">
             <li>
               JS
-              <ul>
+              <ul class="skills__list skills__list-inside">
                 <li>React.js</li>
                 <li>React Native (Basic knowledge)</li>
                 <li>Vue.js (Basic knowledge)</li>
@@ -135,8 +139,8 @@
         <section class="section" id="code">
           <h2 class=".section-title">Code examples</h2>
           <h3>Edit note</h3>
-          <!-- <pre>
-            <code>
+          <pre class="code__example"> 
+            <code >
 const handleEdit = (e, item) => {
     dispatch(editSelectedNoteAction({
         ...selectedNote, list: selectedNote.list.map(listItem => {
@@ -145,9 +149,9 @@ const handleEdit = (e, item) => {
     }));
 }
             </code>
-          </pre> -->
+          </pre>
           <h3>Reducers: index.js</h3>
-          <pre>
+          <pre class="code__example">
             <code>
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
@@ -168,7 +172,13 @@ export const store = configureStore({ reducer: rootReducer });
           <h3>Study projects</h3>
           <ul>
             <li>
-              <a href="https://mesto.hosfatantabolis.ru/">Mesto Project</a>
+              <a
+                class="work__link"
+                href="https://mesto.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer"
+                >Mesto Project</a
+              >
               <ul>
                 <li>React</li>
                 <li>Express</li>
@@ -176,7 +186,13 @@ export const store = configureStore({ reducer: rootReducer });
               </ul>
             </li>
             <li>
-              <a href="https://movies.hosfatantabolis.ru/">Movies Project</a>
+              <a
+                class="work__link"
+                href="https://movies.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer"
+                >Movies Project</a
+              >
               <ul>
                 <li>React</li>
                 <li>Express</li>
@@ -184,7 +200,11 @@ export const store = configureStore({ reducer: rootReducer });
               </ul>
             </li>
             <li>
-              <a href="https://how-to-learn.hosfatantabolis.ru/"
+              <a
+                class="work__link"
+                href="https://how-to-learn.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer"
                 >Project How-to-learn</a
               >
               <ul>
@@ -192,7 +212,11 @@ export const store = configureStore({ reducer: rootReducer });
               </ul>
             </li>
             <li>
-              <a href="https://russian-travel.hosfatantabolis.ru/"
+              <a
+                class="work__link"
+                href="https://russian-travel.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer"
                 >Travel Project</a
               >
               <ul>
@@ -205,7 +229,11 @@ export const store = configureStore({ reducer: rootReducer });
           <h3>Pet projects</h3>
           <ul>
             <li>
-              <a href="https://random-beer.hosfatantabolis.ru/"
+              <a
+                class="work__link"
+                href="https://random-beer.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer"
                 >Random Beer Project</a
               >
               <ul>
@@ -213,13 +241,25 @@ export const store = configureStore({ reducer: rootReducer });
               </ul>
             </li>
             <li>
-              <a href="https://notes.hosfatantabolis.ru/">Notes Project</a>
+              <a
+                class="work__link"
+                href="https://notes.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer"
+                >Notes Project</a
+              >
               <ul>
                 <li>React / Redux</li>
               </ul>
             </li>
             <li>
-              <a href="https://hosfatantabolis.ru/scanner">Scanner Project</a>
+              <a
+                class="work__link"
+                href="https://hosfatantabolis.ru/scanner"
+                target="_blank"
+                rel="noreferrer"
+                >Scanner Project</a
+              >
               <ul>
                 <li>React Native basic usage for my current job</li>
                 <li>Telegram bots</li>
@@ -245,9 +285,24 @@ export const store = configureStore({ reducer: rootReducer });
     </main>
     <footer class="footer">
       <div class="container">
-        <img alt="course logo" />
-        <ul>
-          <li>My GitHub</li>
+        <ul class="footer__list">
+          <li>
+            <a href="https://rs.school/js/" target="_blank" rel="noreferrer">
+              <img
+                class="footer__logo"
+                alt="course logo"
+                src="./img/rs_school_js.svg"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="footer__link"
+              href="https://github.com/hosfatantabolis"
+              target="_blank"
+              rel="noreferrer"
+              >My GitHub</a
+            >
+          </li>
         </ul>
       </div>
     </footer>
