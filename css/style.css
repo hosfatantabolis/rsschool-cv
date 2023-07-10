@@ -190,3 +190,9 @@ pre {
 .footer__link:hover {
   color: #846f5e;
 }
+
+@media (max-width: 1130px) {
+  .container__main {
+    grid-template-columns: repeat(1, auto);
+  }
+}
