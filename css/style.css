@@ -1,0 +1,198 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../vendor/fonts/Montserrat/montserrat-v15-latin_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../vendor/fonts/Montserrat/montserrat-v15-latin_cyrillic-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../vendor/fonts/Montserrat/montserrat-v15-latin_cyrillic-600.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../vendor/fonts/Montserrat/montserrat-v15-latin_cyrillic-600.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../vendor/fonts/Montserrat/montserrat-v15-latin_cyrillic-700.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../vendor/fonts/Montserrat/montserrat-v15-latin_cyrillic-700.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+pre {
+  overflow-x: scroll;
+  max-width: 400px;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #050602;
+  color: #ffffff;
+  line-height: 1.3;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.section {
+  border: 1px solid #ffff;
+  border-radius: 5px;
+  padding: 15px;
+  transition: border 0.5s ease 0.1s;
+}
+.section:hover {
+  border-color: #846f5e;
+}
+
+.header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: #080b20;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.nav__link {
+  transition: color 0.5s ease 0.1s;
+}
+.nav__link:hover {
+  color: #846f5e;
+}
+.container__main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile__photo {
+  border-radius: 50%;
+  max-height: 200px;
+}
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+.contacts__list-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px;
+}
+.contacts__list-item_link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s ease 0.1s;
+}
+.contacts__list-item_link:hover {
+  color: #846f5e;
+}
+.contacts__list-item_img {
+  margin-right: 24px;
+  transition: filter 0.5s ease 0.1s;
+}
+
+.contacts__list-item:hover .contacts__list-item_img {
+  filter: invert(44%) sepia(16%) saturate(585%) hue-rotate(345deg)
+    brightness(98%) contrast(88%);
+  /* filter color codepen https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+.about__link {
+  text-decoration: underline;
+  transition: color 0.5s ease 0.1s;
+}
+.about__link:hover {
+  color: #846f5e;
+}
+
+.code__example {
+  background-color: #13100e;
+}
+
+.work__link {
+  text-decoration: underline;
+  transition: color 0.5s ease 0.1s;
+}
+.work__link:hover {
+  color: #846f5e;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.footer {
+  border-top: 1px solid #ffff;
+  margin: 20px 0;
+}
+
+.footer__logo {
+  min-width: 100px;
+  background-color: #fff;
+  transition: background-color 0.5s ease 0.1s;
+}
+
+.footer__logo:hover {
+  background-color: rgb(230, 227, 32);
+}
+
+.footer__link {
+  transition: color 0.5s ease 0.1s;
+}
+.footer__link:hover {
+  color: #846f5e;
+}
+
+@media (max-width: 1130px) {
+  .container__main {
+    grid-template-columns: repeat(1, auto);
+  }
+}
