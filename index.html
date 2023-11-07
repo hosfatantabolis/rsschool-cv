@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>RsSchool CV Maksim Litvinov</title>
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link" href="#profile">Profile</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#about">About me</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#skills">Skills</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#code">Code examples</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#work">Work experience</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#education">Education</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#languages">Languages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container container__main">
+        <section class="section profile" id="profile">
+          <h1>Maksim Litvinov</h1>
+          <img
+            class="profile__photo"
+            alt="me, myself and I"
+            src="./img/me.jpg">
+          <p>Junior Front-end Developer</p>
+        </section>
+
+        <section class="section contacts" id="contacts">
+          <h2 class=".section-title">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__list-item">
+              <a class="contacts__list-item_link" href="tel:+79117279407">
+                <img
+                  src="./img/icons/tel.svg"
+                  alt="telephone icon"
+                  class="contacts__list-item_img">+7&nbsp;911&nbsp;727&nbsp;94&nbsp;07
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <a
+                class="contacts__list-item_link"
+                href="mailto:litvinov.maksim.konstantinovich@gmail.com?subject=Предложение%20о%20работе"
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  src="./img/icons/mail.svg"
+                  alt="mail icon"
+                  class="contacts__list-item_img">litvinov.maksim.konstantinovich@gmail.com
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <a
+                class="contacts__list-item_link"
+                href="https://t.me/hosfatantabolis"
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  src="./img/icons/telegram.svg"
+                  alt="telegram icon"
+                  class="contacts__list-item_img">@hosfatantabolis
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="about">
+          <h2 class=".section-title">About me</h2>
+          <p>
+            I’ve been learning frontend for quite a while now and I want to
+            proceed and progress. I think that web-development is a challenging
+            and exciting. I’m looking for a variety of different assignments,
+            that will help me become a proficient developer.
+          </p>
+          <p>
+            I’ve made some Arduino projects, mostly basic. Photos of the best
+            one can be seen
+            <a
+              class="about__link"
+              href="https://www.instagram.com/p/BlbShpsnTBT/?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noreferrer">here</a>.
+          </p>
+          <p>
+            In my spare time I like to shoot photos, I also collect vinyl
+            records.
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class=".section-title">Skills</h2>
+          <ul class="skills__list">
+            <li>
+              JS
+              <ul class="skills__list skills__list-inside">
+                <li>React.js</li>
+                <li>React Native (Basic knowledge)</li>
+                <li>Vue.js (Basic knowledge)</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+              </ul>
+            </li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>MongoDB</li>
+            <li>BEM methodology</li>
+            <li>Git</li>
+            <li>VSCode</li>
+            <li>Figma</li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class=".section-title">Code examples</h2>
+          <h3>Edit note</h3>
+          <pre class="code__example">
+            <code>
+const handleEdit = (e, item) =&gt; {
+    dispatch(editSelectedNoteAction({
+        ...selectedNote, list: selectedNote.list.map(listItem =&gt; {
+            return listItem.id === item.id ? { ...listItem, text: e.target.textContent } : listItem
+        })
+    }));
+}
+            </code>
+          </pre>
+          <h3>Reducers: index.js</h3>
+          <pre class="code__example">
+            <code>
+import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers } from 'redux';
+import { noteReducer } from './noteReducer';
+import { themeReducer } from './modeReducer';
+
+const rootReducer = combineReducers({
+    notes: noteReducer,
+    theme: themeReducer,
+});
+
+export const store = configureStore({ reducer: rootReducer });
+            </code>
+          </pre>
+        </section>
+        <section class="section" id="work">
+          <h2 class=".section-title">Work experience</h2>
+          <h3>Study projects</h3>
+          <ul>
+            <li>
+              <a
+                class="work__link"
+                href="https://mesto.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer">Mesto Project</a>
+              <ul>
+                <li>React</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="work__link"
+                href="https://movies.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer">Movies Project</a>
+              <ul>
+                <li>React</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="work__link"
+                href="https://how-to-learn.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer">Project How-to-learn</a>
+              <ul>
+                <li>HTML5, CSS3</li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="work__link"
+                href="https://russian-travel.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer">Travel Project</a>
+              <ul>
+                <li>
+                  CSS3 Responsive mark-up (grid, flex), HTML5, BEM methodology
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Pet projects</h3>
+          <ul>
+            <li>
+              <a
+                class="work__link"
+                href="https://random-beer.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer">Random Beer Project</a>
+              <ul>
+                <li>Vue.js basic usage</li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="work__link"
+                href="https://notes.hosfatantabolis.ru/"
+                target="_blank"
+                rel="noreferrer">Notes Project</a>
+              <ul>
+                <li>React / Redux</li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="work__link"
+                href="https://hosfatantabolis.ru/scanner"
+                target="_blank"
+                rel="noreferrer">Scanner Project</a>
+              <ul>
+                <li>React Native basic usage for my current job</li>
+                <li>Telegram bots</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="education">
+          <h2 class=".section-title">Education</h2>
+          <ul>
+            <li>RS School Stage0</li>
+            <li>Yandex.Prakticum Web-Developer 10-month course</li>
+            <li>ITMO college (Institute of Precise Mechanics and Optics)</li>
+          </ul>
+        </section>
+        <section class="section" id="Languages">
+          <h2 class=".section-title">Languages</h2>
+          <p>
+            <strong>English</strong>: upper-intermediate<br>
+            <strong>Russian</strong>: native speaker
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__list_item">
+            <a
+              class="footer__link"
+              href="https://github.com/hosfatantabolis"
+              target="_blank"
+              rel="noreferrer">My GitHub page</a>
+          </li>
+          <li>
+            <a href="https://rs.school/js/" target="_blank" rel="noreferrer">
+              <img
+                class="footer__logo"
+                alt="course logo"
+                src="./img/rs_school_js.svg">
+              </a>
+          </li>
+
+          <li><span>2023</span></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
