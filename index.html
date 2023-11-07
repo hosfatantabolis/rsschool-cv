@@ -136,9 +136,9 @@
           <h3>Edit note</h3>
           <pre class="code__example">
             <code>
-const handleEdit = (e, item) =&gt; {
+const handleEdit = (e, item) =&gt {
     dispatch(editSelectedNoteAction({
-        ...selectedNote, list: selectedNote.list.map(listItem =&gt; {
+        ...selectedNote, list: selectedNote.list.map(listItem =&gt {
             return listItem.id === item.id ? { ...listItem, text: e.target.textContent } : listItem
         })
     }));
